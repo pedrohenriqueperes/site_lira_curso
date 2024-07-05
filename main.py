@@ -1,7 +1,11 @@
 from flask import Flask, render_template, url_for
+from forms import *
 
 
 app = Flask(__name__)
+
+
+app.config['SECRET_KEY'] = 'c70d27fa2912b9b0dda5cd10b19c0cc1'
 
 lista_usuarios = ['Lira', 'John', 'Pereira', 'Sogra']
 
@@ -19,7 +23,9 @@ def usuarios():
 
 @app.route('/login')
 def login():
-    return render_template('login.html')
+    form_login = FormLogin()
+    form_criarconta = FormCriarConta()
+    return render_template('login.html', form_login=form_login, form_criarconta=form_criarconta)
 
 if __name__ == '__main__':
     app.run(debug=True)
