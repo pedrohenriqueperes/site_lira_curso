@@ -7,6 +7,7 @@
         <div class="row">
             <div class="col">
                 <form method="POST" action="" class="border mt-2 p-4">
+                    {{ form_login.csrf_token }}
                     <legend>Login</legend>
                     <fieldset>
                         <div class="form-group">
@@ -27,6 +28,7 @@
             </div>
             <div class="col">
                 <form method="POST" action="" class="border mt-2 p-4">
+                    {{ form_login.csrf_token }}
                     <legend>Criar Conta</legend>
                     <fieldset>
                         <div class="form-group">
