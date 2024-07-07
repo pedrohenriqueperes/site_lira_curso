@@ -1,7 +1,7 @@
-from main import app, database
-from comunidadeimpressionadora.models import Usuario, Post
+from main import app
+from comunidadeimpressionadora import database
 
 
-# with app.app_context():
-#     database.create_all()
+with app.app_context():
+    database.create_all()
 
