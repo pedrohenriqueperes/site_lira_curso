@@ -1,3 +1,5 @@
 .venv
 .idea
 instance/comunidade.db
+.idea
+.env
