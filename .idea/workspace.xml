@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="eaa7a30d-b6da-49d5-b328-4c8024cbb8c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/templates/usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/usuarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/comunidade.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/comunidade.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,7 +47,9 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.teste.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mac/Documents/PycharmProjects/site_hashtag&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
   }
 }</component>
   <component name="RunManager">
@@ -70,11 +79,11 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="4" Folder0="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master" Folder1="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master" Folder2="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master" Folder3="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master" CustomDictionaries="4" CustomDictionary0="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_technical-terms_without-accents.dic" CustomDictionary1="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_technical-terms.dic" CustomDictionary2="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_without-accents.dic" CustomDictionary3="$USER_HOME$/Downloads/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="eaa7a30d-b6da-49d5-b328-4c8024cbb8c7" name="Changes" comment="" />
