@@ -2,7 +2,7 @@ from flask import render_template, request, redirect, flash, url_for
 from comunidadeimpressionadora import app, database, bcrypt
 from comunidadeimpressionadora.forms import FormLogin, FormCriarConta
 from comunidadeimpressionadora.models import Usuario
-from flask_login import login_user, logout_user, current_user
+from flask_login import login_user, logout_user, current_user, login_required
 
 lista_usuarios = ['Lira', 'John', 'Pereira', 'Sogra']
 
@@ -15,6 +15,7 @@ def contato():
     return render_template('contato.html')
 
 @app.route('/usuarios')
+@login_required
 def usuarios():
     return render_template('usuarios.html', lista_usuarios=lista_usuarios)
 
@@ -30,7 +31,11 @@ def login():
             print("Senha correta")
             login_user(usuario, remember=form_login.lembrar_dados.data)
             flash(f'Login feito com sucesso no email: {form_login.email.data}', 'alert-success')
-            return redirect(url_for('home'))
+            par_next = request.args.get('next')
+            if par_next:
+                return redirect(par_next)
+            else:
+                return redirect(url_for('home'))
         else:
             print("Falha no login, email ou senha incorretos")
             flash('Falha no login, email ou senha incorretos!', 'alert-danger')
@@ -46,6 +51,7 @@ def login():
 
 
 @app.route('/sair')
+@login_required
 def sair():
     logout_user()
     flash('Logout Feito com Sucesso!', 'alert-success')
@@ -53,9 +59,11 @@ def sair():
 
 
 @app.route('/perfil')
+@login_required
 def perfil():
     return render_template('perfil.html')
 
 @app.route('/post/criar')
+@login_required
 def criar_post():
     return render_template('criarpost.html')

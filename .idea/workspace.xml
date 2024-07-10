@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa7a30d-b6da-49d5-b328-4c8024cbb8c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/site_hashtag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/site_hashtag.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comunidadeimpressionadora/templates/usuarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/usuarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/comunidade.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/comunidade.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +38,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.teste.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mac/Documents/PycharmProjects/site_hashtag&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.main.executor": "Run",
+    "Python.teste.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/mac/Documents/PycharmProjects/site_hashtag",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="site_hashtag" />
@@ -93,5 +90,8 @@
       <updated>1720114001598</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
 </project>
