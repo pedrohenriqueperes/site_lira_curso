@@ -7,7 +7,10 @@ import secrets
 import os
 from PIL import Image
 
-lista_usuarios = ['Lira', 'John', 'Pereira', 'Sogra']
+
+
+
+
 
 @app.route('/')
 def home():
@@ -20,6 +23,7 @@ def contato():
 @app.route('/usuarios')
 @login_required
 def usuarios():
+    lista_usuarios = Usuario.query.all()
     return render_template('usuarios.html', lista_usuarios=lista_usuarios)
 
 @app.route('/login', methods=['GET', 'POST'])
