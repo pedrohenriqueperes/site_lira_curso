@@ -1,0 +1,53 @@
+{% extends 'perfil.html' %}
+
+{% block form_editar_perfil %}
+<div class="container">
+    
+    <hr>
+    <div class="row">
+        <div class="col">
+            <form method="POST" action="" class="border mt-2 p-4">
+                {{ form.csrf_token }}
+                <legend>Editar Perfil</legend>
+                <fieldset>
+                    <div class="form-group">
+                        {{ form.username.label(class='form-control-label') }}
+                        {% if form.username.errors  %}
+                            {{ form.username(class='form-control is-invalid') }}
+                            <div class="invalid-feedback">
+                                {% for error in form.username.errors %}
+                                    {{error}}
+                                {% endfor %}
+                            </div>
+                        {% else %}    
+                            {{ form.username(class='form-control') }}
+                        {% endif %}
+                        
+                    </div>
+                    <div class="form-group">
+                        {{ form.email.label(class='form-control-label') }}
+                        {% if form.email.errors  %}
+                            {{ form.email(class='form-control is-invalid') }}
+                            <div class="invalid-feedback">
+                                {% for error in form.email.errors %}
+                                    {{error}}
+                                {% endfor %}
+                            </div>
+                        {% else %}    
+                            {{ form.email(class='form-control') }}
+                        {% endif %}
+                        
+                    </div>
+                    
+                    
+                </fieldset>
+                {{ form.botao_submit_editarperfil(class='btn btn-primary mt-2') }}
+            </form>
+        </div>
+        
+    </div>
+    
+    
+</div>
+    
+{% endblock %}
