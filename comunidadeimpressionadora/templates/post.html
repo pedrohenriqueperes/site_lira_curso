@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        
+        
+        <div class="row border mt-4 p-md-3 meupost">
+            <div class="col col-2">
+                <h3>{{ post.autor.username }}</h3>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='fotos_perfil/{}'.format(post.autor.foto_perfil)) }}" class="rounded img-fluid" width="200" height="200">
+                </div>
+                <div class="row justify-content-center">
+                    {% for curso in post.autor.cursos.split(';') %}
+                        <button type="button" class="btn btn-success mt-2" disabled>{{ curso }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col col-8">
+                <a style="text-decoration: none;" href="{{ url_for('exibir_post', post_id=post.id) }}">
+                    <h3>{{ post.titulo }}</h3>
+                </a>
+                <p>{{ post.corpo }}</p>
+            </div>
+        </div>
+        
+       
+    </div>
+    {% if form %}
+    <div class="container">
+    
+        <hr>
+        <div class="row">
+            <div class="col">
+                <form method="POST" action="" class="border mt-2 p-4">
+                    {{ form.csrf_token }}
+                    <legend>Editar Post</legend>
+                    <fieldset>
+                        <div class="form-group">
+                            {{ form.titulo.label(class='form-control-label') }}
+                            {% if form.titulo.errors  %}
+                                {{ form.titulo(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.titulo.errors %}
+                                        {{error}}
+                                    {% endfor %}
+                                </div>
+                            {% else %}    
+                                {{ form.titulo(class='form-control') }}
+                            {% endif %}
+                            
+                        </div>
+                         <div class="form-group">
+                            {{ form.corpo.label(class='form-control-label') }}
+                            {% if form.corpo.errors  %}
+                                {{ form.corpo(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.corpo.errors %}
+                                        {{error}}
+                                    {% endfor %}
+                                </div>
+                            {% else %}    
+                                {{ form.corpo(class='form-control') }}
+                            {% endif %}
+                            
+                        </div>
+                        
+                     
+                        
+                    </fieldset>
+                    {{ form.botao_submit(class='btn btn-primary mt-2') }}
+                </form>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    {% endif %}
+{% endblock  %}

@@ -158,3 +158,36 @@ def editar_perfil():
         form.username.data = current_user.username
     foto_perfil = url_for('static', filename= 'fotos_perfil/{}'.format(current_user.foto_perfil))
     return render_template('editarperfil.html', foto_perfil=foto_perfil, form=form)
+
+
+@app.route('/post/<int:post_id>', methods=['GET', 'POST'])
+@login_required
+def exibir_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    form = None
+    if current_user.is_authenticated and current_user == post.autor:
+        form = FormCriarPost()
+        if request.method == 'GET':
+            form.titulo.data = post.titulo
+            form.corpo.data = post.corpo
+        elif form.validate_on_submit():
+            post.titulo = form.titulo.data
+            post.corpo = form.corpo.data
+            database.session.commit()
+            flash("Post Atualizado com Sucesso!", "alert-success")
+            return redirect(url_for('home'))
+    return render_template('post.html', post=post, form=form)
+
+
+# @app.route('/post/<post_id>', methods=['GET', 'POST'])
+# def exibir_post(post_id):
+#     post = Post.query.get(post_id)
+#     if current_user == post.autor:
+#         form = FormCriarPost()
+#         if request.method == 'GET':
+#             form.titulo.data = post.titulo
+#             form.corpo.data = form.corpo
+         
+#     else:
+#         form = None    
+#     return render_template('post.html', post=post, form=form)
